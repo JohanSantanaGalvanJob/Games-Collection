@@ -1,9 +1,11 @@
+@import './colors.scss';
+
 .card-game-content {
-    background-color: #141414;
+    background-color: $background-color;
     border: 1px white solid;
     border-radius: 0px 0px 20px 0px;
     display: grid;
-    color: white;
+    color: $icon-color;
     grid-template-areas:
         'image title title title title title'
         'image text text text text icon'
@@ -49,7 +51,7 @@
 }
 
 .item5>p {
-    background-color: #C70039;
+    background-color: $primary-color;
     padding: 0.5em;
     border-radius: 1em;
 }

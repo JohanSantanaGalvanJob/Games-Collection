@@ -1,4 +1,4 @@
-import '../Styles/Cards.css';
+import '../Styles/Cards.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faBookmark } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';

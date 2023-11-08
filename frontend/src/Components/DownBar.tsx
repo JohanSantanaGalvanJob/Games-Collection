@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../Styles/DownBar.css'
+import '../Styles/DownBar.scss'
 import { faHouse, faListUl, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { NavLink, useMatch } from 'react-router-dom';
 

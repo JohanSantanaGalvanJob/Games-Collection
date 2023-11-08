@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../Styles/TopBar.css'
+import '../Styles/TopBar.scss'
 import { faGamepad } from '@fortawesome/free-solid-svg-icons';
 import { faBell,faUser } from '@fortawesome/free-regular-svg-icons';
 

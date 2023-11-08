@@ -1,8 +1,10 @@
+@import './colors.scss';
+
 .down-bar-container {
     align-items: center;
-    background-color: #141414;
+    background-color: $background-color;
     border-top: 1px white solid;
-    color: white;
+    color: $icon-color;
     display: flex;
     height: 6vh;
     justify-content: space-around;
@@ -12,10 +14,10 @@
 }
 
 .selected .icons{
-    color: white;
+    color: $icon-color;
     transition: color 1s ease;
 }
 
 .selected.active-link .icons {
-    color: #C70039; /* Cambia el color cuando el enlace está activo */
+    color: $primary-color; /* Cambia el color cuando el enlace está activo */
   }

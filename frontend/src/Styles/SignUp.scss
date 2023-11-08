@@ -1,4 +1,6 @@
-.login-container {
+@import './colors.scss';
+
+.signup-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,38 +8,38 @@
     height: 100vh;
   }
 
-  .login-form {
+  .signup-form {
     text-align: center;
     padding: 20px;
-    background-color: #141414;
+    background-color: $background-color;
     border: 1px white solid;
     border-radius: 10px;
   }
 
-  .login-form label {
+  .signup-form label {
     display: block;
-    color: white;
+    color: $icon-color;
     margin-bottom: 8px;
   }
 
-  .login-form input {
+  .signup-form input {
     width: 90%;
     padding: 8px;
-    background-color: #141414;
+    background-color: $background-color;
     border: 1px white solid;
-    color: white;
+    color: $icon-color;
     margin-bottom: 16px;
   }
 
-  .login-form button {
+  .signup-form button {
     border-radius: 10px;
-    color: white;
-    background-color: #C70039;
-    border: 1em #C70039 solid;
+    color: $icon-color;
+    background-color: $primary-color;
+    border: 1em $primary-color solid;
   }
 
-  .login-icon {
+  .signup-icon {
     margin-bottom: 20px; /* Ajusta según sea necesario para separar el ícono del formulario */
-    color: #C70039;
+    color: $primary-color;
     font-size: 10em;
   }

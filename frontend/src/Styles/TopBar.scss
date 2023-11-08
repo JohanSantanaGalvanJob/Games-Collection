@@ -1,6 +1,9 @@
+@import './colors.scss';
+
+
 .top-bar-container{
     align-items: center;
-    background-color: #141414;
+    background-color: $background-color;
     border-bottom: 1px white solid;
     color: white;
     display: flex;
@@ -13,5 +16,5 @@
 }
 
 .top-bar-container :nth-child(2){
-    color:#C70039;
+    color:$primary-color;
 }

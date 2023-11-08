@@ -1,4 +1,4 @@
-import '../Styles/Home.css';
+import '../Styles/Home.scss';
 import '../Components/DownBar'
 import DownBar from '../Components/DownBar';
 import TopBar from '../Components/TopBar';
