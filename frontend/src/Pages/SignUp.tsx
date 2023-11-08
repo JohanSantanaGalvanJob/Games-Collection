@@ -20,9 +20,10 @@ function SignUp() {
 
     return (
         <>
-            <div className="login-container">
-                <FontAwesomeIcon icon={faGamepad} className='login-icon' />
-                <form className="login-form" onSubmit={handleSubmit}>
+            <div className="signup-container">
+                <FontAwesomeIcon icon={faGamepad} className='signup-icon' />
+                <h2 className='signup-title'>Sign Up</h2>
+                <form className="signup-form" onSubmit={handleSubmit}>
                 <label htmlFor="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="helloworld123" value={username}
                         onChange={(e) => setUsername(e.target.value)} required />

@@ -1,45 +1,95 @@
 @import './colors.scss';
 
 .signup-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.signup-form {
+  text-align: center;
+  padding: 20px;
+  background-color: $background-color;
+  border: 1px white solid;
+  border-radius: 10px;
+}
+
+.signup-form label {
+  display: block;
+  color: $icon-color;
+  margin-bottom: 8px;
+}
+
+.signup-form input {
+  width: 90%;
+  padding: 8px;
+  background-color: $background-color;
+  border: 1px white solid;
+  color: $icon-color;
+  margin-bottom: 16px;
+}
+
+.signup-form button {
+  border-radius: 10px;
+  color: $icon-color;
+  background-color: $primary-color;
+  border: 1em $primary-color solid;
+}
+
+.signup-icon {
+  margin-bottom: 10px;
+  /* Ajusta según sea necesario para separar el ícono del formulario */
+  color: $primary-color;
+  font-size: 10em;
+}
+
+.signup-title{
+  font-size: 2em;
+  color: $icon-color;
+  margin-top: 1px;
+}
+
+/*VERSIÓN DE DESKTOP*/
+@media only screen and (min-width: 768px) {
+  .signup-container{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
   .signup-form {
-    text-align: center;
-    padding: 20px;
-    background-color: $background-color;
-    border: 1px white solid;
-    border-radius: 10px;
+    padding: 40px;
+    /* Aumenta el espacio interno del formulario */
+    margin-bottom: 3em;
   }
 
   .signup-form label {
-    display: block;
-    color: $icon-color;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    /* Ajusta el margen inferior de las etiquetas */
+    font-size: 1.5em;
   }
 
   .signup-form input {
     width: 90%;
-    padding: 8px;
-    background-color: $background-color;
-    border: 1px white solid;
-    color: $icon-color;
-    margin-bottom: 16px;
+    /* Reduzca la anchura del campo de entrada */
+    padding: 10px;
+    /* Aumenta el relleno del campo de entrada */
+    margin-bottom: 20px;
+    /* Ajusta el margen inferior del campo de entrada */
   }
 
   .signup-form button {
-    border-radius: 10px;
-    color: $icon-color;
-    background-color: $primary-color;
-    border: 1em $primary-color solid;
+    font-size: 1em;
+    /* Aumenta el tamaño de fuente del botón */
   }
 
   .signup-icon {
-    margin-bottom: 20px; /* Ajusta según sea necesario para separar el ícono del formulario */
-    color: $primary-color;
     font-size: 10em;
+    // margin-top: 1.5em;
+    /* Aumenta el tamaño del ícono */
   }
+
+  .signup-title {
+    font-size: 3em;
+  }
+}
