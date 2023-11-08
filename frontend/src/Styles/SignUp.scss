@@ -53,40 +53,27 @@
 
 /*VERSIÓN DE DESKTOP*/
 @media only screen and (min-width: 768px) {
-  .signup-container{
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
   .signup-form {
     padding: 40px;
-    /* Aumenta el espacio interno del formulario */
-    margin-bottom: 3em;
   }
 
   .signup-form label {
     margin-bottom: 12px;
-    /* Ajusta el margen inferior de las etiquetas */
     font-size: 1.5em;
   }
 
   .signup-form input {
     width: 90%;
-    /* Reduzca la anchura del campo de entrada */
     padding: 10px;
-    /* Aumenta el relleno del campo de entrada */
     margin-bottom: 20px;
-    /* Ajusta el margen inferior del campo de entrada */
   }
 
   .signup-form button {
     font-size: 1em;
-    /* Aumenta el tamaño de fuente del botón */
   }
 
   .signup-icon {
     font-size: 10em;
-    // margin-top: 1.5em;
-    /* Aumenta el tamaño del ícono */
   }
 
   .signup-title {
