@@ -1,0 +1,21 @@
+.down-bar-container {
+    align-items: center;
+    background-color: #141414;
+    border-top: 1px white solid;
+    color: white;
+    display: flex;
+    height: 6vh;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.selected .icons{
+    color: white;
+    transition: color 1s ease;
+}
+
+.selected.active-link .icons {
+    color: #C70039; /* Cambia el color cuando el enlace está activo */
+  }

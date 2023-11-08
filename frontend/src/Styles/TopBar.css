@@ -1,0 +1,17 @@
+.top-bar-container{
+    align-items: center;
+    background-color: #141414;
+    border-bottom: 1px white solid;
+    color: white;
+    display: flex;
+    height: 6vh;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.top-bar-container :nth-child(2){
+    color:#C70039;
+}

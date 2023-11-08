@@ -1,0 +1,43 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-form {
+    text-align: center;
+    padding: 20px;
+    background-color: #141414;
+    border: 1px white solid;
+    border-radius: 10px;
+  }
+
+  .login-form label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+  }
+
+  .login-form input {
+    width: 90%;
+    padding: 8px;
+    background-color: #141414;
+    border: 1px white solid;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+  .login-form button {
+    border-radius: 10px;
+    color: white;
+    background-color: #C70039;
+    border: 1em #C70039 solid;
+  }
+
+  .login-icon {
+    margin-bottom: 20px; /* Ajusta según sea necesario para separar el ícono del formulario */
+    color: #C70039;
+    font-size: 10em;
+  }
