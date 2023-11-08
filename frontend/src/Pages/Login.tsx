@@ -19,6 +19,7 @@ function Login() {
         <>
             <div className="login-container">
                 <FontAwesomeIcon icon={faGamepad} className='login-icon' />
+                <h2 className='login-title'>Login</h2>
                 <form className="login-form" onSubmit={handleSubmit}>
                     <label htmlFor="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="hello@example.com" value={email}

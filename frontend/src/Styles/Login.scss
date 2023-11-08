@@ -38,9 +38,44 @@
   border: 1em $primary-color solid;
 }
 
+.login-title{
+  font-size: 2em;
+  color: $icon-color;
+  margin-top: 1px;
+}
+
 .login-icon {
-  margin-bottom: 20px;
-  /* Ajusta según sea necesario para separar el ícono del formulario */
   color: $primary-color;
   font-size: 10em;
+}
+
+/*VERSIÓN DE DESKTOP*/
+@media only screen and (min-width: 768px) {
+  .login-form {
+    padding: 40px; /* Aumenta el espacio interno del formulario */
+    margin-bottom: 2em;
+  }
+
+  .login-form label {
+    margin-bottom: 12px; /* Ajusta el margen inferior de las etiquetas */
+    font-size: 1.5em;
+  }
+
+  .login-form input {
+    width: 90%; /* Reduzca la anchura del campo de entrada */
+    padding: 10px; /* Aumenta el relleno del campo de entrada */
+    margin-bottom: 20px; /* Ajusta el margen inferior del campo de entrada */
+  }
+
+  .login-form button {
+    font-size: 1em; /* Aumenta el tamaño de fuente del botón */
+  }
+
+  .login-icon {
+    font-size: 10em; /* Aumenta el tamaño del ícono */
+  }
+
+  .login-title{
+    font-size: 3em;
+  }
 }
