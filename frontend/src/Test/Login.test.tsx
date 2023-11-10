@@ -50,7 +50,6 @@ describe('Login Component', () => {
         expect(mockUsedNavigate).toHaveBeenCalledWith('/Home')
 
         // Password with invalid pattern
-        fireEvent.change(emailInput, { target: { value: 'test@example.com' } });
         fireEvent.change(passwordInput, { target: { value: 'short' } });
         fireEvent.click(submitButton);
         expect(screen.getByText('Debe tener al menos 1 número y 8 caracteres.')).toBeInTheDocument();
