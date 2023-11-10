@@ -31,7 +31,10 @@
 }
 
 .item1>img {
-    object-fit: cover;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 400px;
+    min-height: 400px;
 }
 
 .item2 {
@@ -69,6 +72,8 @@
     grid-area: genre;
     justify-content: space-around;
     align-items: flex-end;
+    // flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .item5>p {

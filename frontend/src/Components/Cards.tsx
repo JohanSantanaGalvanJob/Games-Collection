@@ -26,7 +26,7 @@ function Cards() {
         <div className='card-container'>
             <div className='card-game-content'>
                 <div className='item1'>
-                    <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Sekiro_art.jpg" alt="Portada de Sekiro" />
+                    <img src="https://m.media-amazon.com/images/I/916khATjogL.jpg" alt="Portada de Sekiro" />
                 </div>
                 <div className='item2'>
                     <h3>Sekiro Shadows Die Twice</h3>
@@ -37,6 +37,7 @@ function Cards() {
                 <div className='item5'>
                     <p>SoulsLike</p>
                     <p>Action</p>
+                    <p>RPG</p>
                 </div>
                 <div className='item4'>
                     <FontAwesomeIcon icon={icon}

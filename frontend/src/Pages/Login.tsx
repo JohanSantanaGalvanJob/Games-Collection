@@ -25,8 +25,8 @@ function Login() {
                     <input type="email" id="email" name="email" placeholder="hello@example.com" value={email}
                         onChange={(e) => setEmail(e.target.value)} required />
                     <label htmlFor="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="+8 characters & numbers" value={password}
-                        onChange={(e) => setPassword(e.target.value)} required />
+                    <input type="password" id="password" name="password" placeholder="+8 characters & numbers" pattern="^(?=.*[0-9]).{8,}$"
+                    title="Debe tener al menos 1 número y 8 caracteres" value={password} onChange={(e) => setPassword(e.target.value)} required />
                     <button type="submit">Submit</button>
                 </form>
             </div>

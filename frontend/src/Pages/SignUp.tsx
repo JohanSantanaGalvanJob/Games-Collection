@@ -1,6 +1,6 @@
 import '../Styles/SignUp.scss'
 
-import { faGamepad, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -47,19 +47,20 @@ function SignUp() {
                             <img src={previewSrc} alt="Imagen" />
                         </div>
                         <div>
-                            <input type="file" id="fileInput" accept="image/*" onChange={handleFileChange} style={{ display: 'none' }} />
-                            <FontAwesomeIcon icon={faPlus} onClick={() => { document.getElementById('fileInput')!.click(); }} className='pfp-icon'></FontAwesomeIcon>
+                            <input type="file" id="fileInput" accept="image/*" onChange={handleFileChange} style={{ display: 'none' }} required/>
+                            <FontAwesomeIcon icon={faPlus} onClick={() => { document.getElementById('fileInput')!.click(); }}
+                            className='pfp-icon'></FontAwesomeIcon>
                         </div>
                     </div>
                     <label htmlFor="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="helloworld123" value={username}
-                        onChange={(e) => setUsername(e.target.value)} required />
+                    <input type="text" id="username" name="username" placeholder="helloworld123" pattern=".{1,15}"
+                    title="Debe tener menos de 15 caracteres" value={username} onChange={(e) => setUsername(e.target.value)} required />
                     <label htmlFor="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="hello@example.com" value={email}
                         onChange={(e) => setEmail(e.target.value)} required />
                     <label htmlFor="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="+8 characters & numbers" value={password}
-                        onChange={(e) => setPassword(e.target.value)} required />
+                    <input type="password" id="password" name="password" placeholder="+8 characters & numbers" pattern="^(?=.*[0-9]).{8,}$"
+                    title="Debe tener al menos 1 número y 8 caracteres" value={password} onChange={(e) => setPassword(e.target.value)} required />
                     <label htmlFor="birthdate">Birth Date</label>
                     <input type="date" id="birthdate" name="birthdate" placeholder="19/11/2003" value={birthdate}
                         onChange={(e) => setBirthdate(e.target.value)} required />
