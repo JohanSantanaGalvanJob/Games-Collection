@@ -21,3 +21,10 @@
 .selected.active-link .icons {
     color: $primary-color; /* Cambia el color cuando el enlace está activo */
   }
+
+  @media only screen and (min-width: 768px) {
+    .down-bar-container {
+        display: none;
+    }
+
+}

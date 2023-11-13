@@ -1,8 +1,7 @@
 @import './colors.scss';
 
 
-
-.top-bar-container {
+.desktop-top-bar-container{
     align-items: center;
     background-color: $background-color;
     border-bottom: 1px white solid;
@@ -16,15 +15,17 @@
     width: 100%;
 }
 
-.top-bar-container :nth-child(2) {
-    color: $primary-color;
+.desktop-top-bar-container :nth-child(2){
+    color:$primary-color;
 }
 
-@media only screen and (min-width: 768px) {
-    .top-bar-container {
+.desktop-profile-container :nth-child(1){
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .desktop-top-bar-container {
         display: none;
     }
 
 }
-
-

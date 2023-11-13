@@ -1,0 +1,77 @@
+@import './colors.scss';
+
+.sidebar-container{
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    background-color: $background-color;
+    border-right: 1px white solid;
+    z-index: 100;
+    transition: right 0.3s ease;
+
+}
+
+.sidebar-profile-picture-image{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    color: $icon-color;
+}
+
+.sidebar-profile-picture-image img{
+    width: 100px;
+    border-radius: 50%;
+  }
+
+.sidebar-icons-container{
+    height: 100vh;
+    margin-top: 50px;
+    padding-right: 1em;
+}
+
+
+.sidebar-elements-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding-right: 1em;
+    transition: background-color 0.5s;
+}
+
+.sidebar-elements-container:hover{
+    color: $primary-color;
+}
+
+.sidebar-elements-container :nth-child(1){
+    margin-right: 0.5em;
+    margin-left: 2em;
+}
+
+.sidebar-language-elements-container{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0.5em;
+}
+
+.sidebar-language-elements-container img{
+    margin: 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar-container {
+        display: none;
+    }
+
+}
